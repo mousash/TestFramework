@@ -1,0 +1,11 @@
+framework module PiaSDK {
+  umbrella header "PiaSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module PiaSDK.Swift {
+  header "PiaSDK-Swift.h"
+  requires objc
+}

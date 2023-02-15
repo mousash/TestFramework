@@ -21,6 +21,10 @@ let package = Package(
         .target(
             name: "PiaSDKPackage",
             dependencies: []),
+        .binaryTarget(
+            name: "PiaSDK",
+            path: "artifacts/PiaSDK.xcframework"
+        ),
         .testTarget(
             name: "PiaSDKPackageTests",
             dependencies: ["PiaSDKPackage"]),
